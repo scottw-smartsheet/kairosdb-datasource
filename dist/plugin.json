@@ -1,15 +1,16 @@
 {
   "id": "grafana-kairosdb-datasource",
-  "name": "KairosDB",
+  "name": "KairosDB+ArpNetworking",
   "type": "datasource",
   "metrics": true,
   "annotations": false,
   "staticRoot": ".",
   "info": {
-    "description": "datasource plugin for KairosDB",
+    "description": "datasource plugin for KairosDB + ArpNetworking histograms",
     "keywords": [
       "kairosdb",
-      "cassandra"
+      "cassandra",
+      "ArpNetworking"
     ],
     "logos": {
       "small": "img/kairosdb_logo_small.png",
@@ -25,8 +26,8 @@
         "url": "https://github.com/ArpNetworking/kairosdb-datasource/blob/master/LICENSE"
       }
     ],
-    "version": "3.0.2",
-    "updated": "2018-07-02"
+    "version": "3.0.3",
+    "updated": "2019-03-15"
   },
   "dependencies": {
     "grafanaVersion": "4.6.2+",
