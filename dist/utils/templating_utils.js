@@ -21,6 +21,9 @@ System.register(["lodash"], function (exports_1, context_1) {
                         if (!lodash_1.default.isNil(matchedMultiValues)) {
                             var replacedValues_1 = [replacedExpression];
                             matchedMultiValues.forEach(function (multiValue) {
+                                if (multiValue.indexOf(TemplatingUtils.MULTI_VALUE_SEPARATOR) == -1) {
+                                    return
+                                }
                                 var values = multiValue.replace(TemplatingUtils.MULTI_VALUE_BOUNDARIES, "")
                                     .split(TemplatingUtils.MULTI_VALUE_SEPARATOR);
                                 replacedValues_1 = lodash_1.default.flatMap(values, function (value) {
